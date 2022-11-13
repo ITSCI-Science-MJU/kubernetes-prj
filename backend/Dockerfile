@@ -1,8 +1,5 @@
 FROM node
 
-ARG mongodb_username_default=root
-ARG mongodb_password_default=1234
-
 WORKDIR /app
 
 COPY package.json .
@@ -13,7 +10,7 @@ COPY . .
 
 EXPOSE 80
 
-ENV MONGODB_USERNAME=$mongodb_username_default
-ENV MONGODB_PASSWORD=$mongodb_password_default
+ENV MONGODB_USERNAME=root
+ENV MONGODB_PASSWORD=1234
 
 CMD ["npm", "start"]
