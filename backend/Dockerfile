@@ -16,4 +16,4 @@ EXPOSE 80
 ENV MONGODB_USERNAME=$mongodb_username_default
 ENV MONGODB_PASSWORD=$mongodb_password_default
 
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
